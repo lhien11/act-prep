@@ -3,6 +3,8 @@
 A complete, self-paced prep course for the **Enhanced ACT** (the format in use since 2025), built as a
 React + TypeScript single-page app. Made for a high-school student (hi, Andy) studying on their own.
 
+**Live:** https://act.hienle.info (GitHub Pages, auto-deployed from `main`; also at https://lhien11.github.io/act-prep/).
+
 ## What's inside
 
 | Area | What it does |
@@ -57,6 +59,12 @@ checks ids, answer indexes, passage references, and that every lesson has questi
 
 Score estimates are rough percent-to-scale conversions meant for tracking trends, not predicting a real score.
 ACT is a registered trademark of ACT, Inc., which is not affiliated with this project.
+
+## Deploying
+
+Every push to `main` runs `.github/workflows/deploy.yml`: type-check, tests, build, deploy to GitHub Pages.
+The custom domain `act.hienle.info` is set in the repo's Pages settings and needs a `CNAME act -> lhien11.github.io`
+record at the DNS provider (Cloudflare, DNS-only).
 
 ## Shareable hosted copy
 
